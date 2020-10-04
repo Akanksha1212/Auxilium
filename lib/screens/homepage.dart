@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auxilium/components/gridDashboard.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:auxilium/widget/messaging_widget.dart';
 
 class Home extends StatefulWidget {
   @override
