@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:auxilium/screens/onboarding_screen.dart';
+import 'package:auxilium/logsign.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Onboarding UI',
       debugShowCheckedModeBanner: false,
-      home: OnboardingScreen(),
+      home: SignIn(),
     );
   }
 }

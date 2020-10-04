@@ -7,11 +7,11 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff9ad7e9),
       appBar: AppBar(
         elevation: 0,
         brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xff9ad7e9),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -45,13 +45,6 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         height: 20,
                       ),
-                      FadeAnimation(
-                          1.2,
-                          Text(
-                            "Login to your account",
-                            style: TextStyle(
-                                fontSize: 15, color: Colors.grey[700]),
-                          )),
                     ],
                   ),
                   Padding(
@@ -84,7 +77,7 @@ class LoginPage extends StatelessWidget {
                             onPressed: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomePage())),
+                                    builder: (context) => Home())),
                             color: Colors.greenAccent,
                             elevation: 0,
                             shape: RoundedRectangleBorder(
@@ -97,12 +90,18 @@ class LoginPage extends StatelessWidget {
                           ),
                         ),
                       )),
+                  SizedBox(
+                    height: 10,
+                  ),
                   FadeAnimation(
                       1.5,
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Text("Don't have an account?"),
+                          SizedBox(
+                            width: 10,
+                          ),
                           Text(
                             "Sign up",
                             style: TextStyle(
@@ -119,7 +118,8 @@ class LoginPage extends StatelessWidget {
                   height: MediaQuery.of(context).size.height / 3,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage('assets/images/talk.jpg'),
+                          image: NetworkImage(
+                              'https://image.freepik.com/free-vector/raised-hands-volunteering-blue-background-vector_77417-471.jpg'),
                           fit: BoxFit.cover)),
                 ))
           ],

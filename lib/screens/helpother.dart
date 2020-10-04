@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:auxilium/components/gridDashboard.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Home extends StatefulWidget {
+class HelpOther extends StatefulWidget {
   @override
-  HomeState createState() => new HomeState();
+  HelpOtherState createState() => new HelpOtherState();
 }
 
-class HomeState extends State<Home> {
+class HelpOtherState extends State<HelpOther> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,9 +18,7 @@ class HomeState extends State<Home> {
             height: 40,
           ),
           Image(
-            image: AssetImage('assets/images/flower.png'),
-            height: 150,
-            width: 150,
+            image: AssetImage('assets/images/donate.png'),
           ),
           Padding(
             padding: EdgeInsets.only(left: 16, right: 16),
@@ -31,18 +29,23 @@ class HomeState extends State<Home> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "Auxilium",
+                      "HelpOther",
                       style: GoogleFonts.openSans(
                           textStyle: TextStyle(
-                              color: Color(0xFF20124d),
-                              fontSize: 23,
-                              fontWeight: FontWeight.bold)),
-                    ),
-                    SizedBox(
-                      height: 4,
+                              color: Color(0xfff8f446),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600)),
                     ),
                     Text(
-                      "Home",
+                      "HelpOther",
+                      style: GoogleFonts.openSans(
+                          textStyle: TextStyle(
+                              color: Color(0xfff8f446),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w600)),
+                    ),
+                    Text(
+                      "HelpOther",
                       style: GoogleFonts.openSans(
                           textStyle: TextStyle(
                               color: Color(0xfff8f446),
@@ -51,21 +54,13 @@ class HomeState extends State<Home> {
                     ),
                   ],
                 ),
-                IconButton(
-                  alignment: Alignment.topCenter,
-                  icon: Image.asset(
-                    "assets/images/notification.png",
-                    width: 24,
-                  ),
-                  onPressed: () {},
-                )
               ],
             ),
           ),
           SizedBox(
             height: 40,
           ),
-          GridDashboard()
+          // add form here
         ],
       ),
     );

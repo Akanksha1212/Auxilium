@@ -210,7 +210,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           ? Container(
               height: 100.0,
               width: double.infinity,
-              color: Colors.white,
+              color: Color(0xFF84dec3),
               child: GestureDetector(
                 onTap: () => Navigator.push(
                     context, MaterialPageRoute(builder: (context) => SignIn())),
@@ -220,7 +220,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     child: Text(
                       'Get started',
                       style: TextStyle(
-                        color: Color(0xFF5B16D0),
+                        color: Color(0xFF20124d),
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
                       ),

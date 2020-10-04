@@ -8,6 +8,7 @@ class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff9ad7e9),
       body: SafeArea(
         child: Container(
           width: double.infinity,
@@ -22,12 +23,12 @@ class SignIn extends StatelessWidget {
                   FadeAnimation(
                       1,
                       Text(
-                        "Welcome",
+                        "Auxilium",
                         style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 30),
+                            fontWeight: FontWeight.bold, fontSize: 40),
                       )),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   FadeAnimation(
                       1.2,
@@ -43,8 +44,9 @@ class SignIn extends StatelessWidget {
                   Container(
                     height: MediaQuery.of(context).size.height / 3,
                     decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assets/images/blue.jpg'))),
+                      image: DecorationImage(
+                          image: AssetImage('assets/images/earth.png')),
+                    ),
                   )),
               Column(
                 children: <Widget>[

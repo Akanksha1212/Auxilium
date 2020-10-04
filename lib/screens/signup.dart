@@ -6,11 +6,11 @@ class SignupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xff9ad7e9),
       appBar: AppBar(
         elevation: 0,
         brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xff9ad7e9),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
@@ -40,7 +40,7 @@ class SignupPage extends StatelessWidget {
                             fontSize: 30, fontWeight: FontWeight.bold),
                       )),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   FadeAnimation(
                       1.2,
@@ -129,7 +129,7 @@ class SignupPage extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: 30,
+          height: 20,
         ),
       ],
     );
