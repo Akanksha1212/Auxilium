@@ -45,7 +45,8 @@ class SignIn extends StatelessWidget {
                     height: MediaQuery.of(context).size.height / 3,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage('assets/images/earth.png')),
+                        image: AssetImage('assets/images/together.png'),
+                      ),
                     ),
                   )),
               Column(

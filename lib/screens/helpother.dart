@@ -21,38 +21,53 @@ class HelpOtherState extends State<HelpOther> {
             image: AssetImage('assets/images/donate.png'),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 16, right: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            padding: EdgeInsets.only(left: 10, right: 10),
+            child: Column(
+              // scrollDirection: Axis.vertical,
               children: <Widget>[
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "HelpOther",
-                      style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                              color: Color(0xfff8f446),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600)),
+                Card(
+                  child: ListTile(
+                    leading: Image.asset("assets/images/landscape.png"),
+                    title: Text('Hocus Focus'),
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+                    subtitle: Text('Location : Arizona'),
+                    isThreeLine: true,
+                    trailing: RaisedButton(
+                      child: Text('More'),
+                      color: Colors.pink[100],
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18),
+                          side: BorderSide(color: Colors.black)),
+                      onPressed: (null),
                     ),
-                    Text(
-                      "HelpOther",
-                      style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                              color: Color(0xfff8f446),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600)),
+                  ),
+                  color: Colors.blue[100],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(55),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Image.asset("assets/images/landscape.png"),
+                    title: Text('Hocus Focus'),
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+                    subtitle: Text('Location : Arizona'),
+                    isThreeLine: true,
+                    trailing: RaisedButton(
+                      child: Text('More'),
+                      color: Colors.pink[100],
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18),
+                          side: BorderSide(color: Colors.black)),
+                      onPressed: (null),
                     ),
-                    Text(
-                      "HelpOther",
-                      style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                              color: Color(0xfff8f446),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600)),
-                    ),
-                  ],
+                  ),
+                  color: Colors.blue[100],
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(55),
+                  ),
                 ),
               ],
             ),

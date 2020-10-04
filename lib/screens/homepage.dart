@@ -15,12 +15,10 @@ class HomeState extends State<Home> {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 40,
+            height: 10,
           ),
           Image(
-            image: AssetImage('assets/images/flower.png'),
-            height: 150,
-            width: 150,
+            image: AssetImage('assets/images/earth.png'),
           ),
           Padding(
             padding: EdgeInsets.only(left: 16, right: 16),
@@ -31,23 +29,12 @@ class HomeState extends State<Home> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "Auxilium",
+                      "Home",
                       style: GoogleFonts.openSans(
                           textStyle: TextStyle(
                               color: Color(0xFF20124d),
                               fontSize: 23,
                               fontWeight: FontWeight.bold)),
-                    ),
-                    SizedBox(
-                      height: 4,
-                    ),
-                    Text(
-                      "Home",
-                      style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                              color: Color(0xfff8f446),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600)),
                     ),
                   ],
                 ),

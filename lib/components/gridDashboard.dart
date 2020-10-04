@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:auxilium/screens/askhelp.dart';
 import 'package:auxilium/screens/helpother.dart';
+import 'package:auxilium/screens/activities.dart';
+import 'package:auxilium/screens/events.dart';
 
 class GridDashboard extends StatelessWidget {
   Items item1 = new Items(
@@ -17,10 +19,12 @@ class GridDashboard extends StatelessWidget {
   Items item3 = new Items(
     title: "Volunteer",
     img: "assets/images/megaphone.png",
+    screen: Activities(),
   );
   Items item4 = new Items(
     title: "Events",
     img: "assets/images/peace-day.png",
+    screen: Events(),
   );
 
   @override
