@@ -17,7 +17,7 @@ class GridDashboard extends StatelessWidget {
     screen: HelpOther(),
   );
   Items item3 = new Items(
-    title: "Volunteer",
+    title: "Activities",
     img: "assets/images/megaphone.png",
     screen: Activities(),
   );

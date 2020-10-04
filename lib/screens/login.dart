@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auxilium/animation/fadeanimation.dart';
 import 'package:auxilium/screens/homepage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -36,12 +37,15 @@ class LoginPage extends StatelessWidget {
                   Column(
                     children: <Widget>[
                       FadeAnimation(
-                          1,
-                          Text(
-                            "Login",
-                            style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold),
-                          )),
+                        1,
+                        Text("Login",
+                            style: GoogleFonts.openSans(
+                              textStyle: TextStyle(
+                                  color: Color(0xFF20124d),
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                      ),
                       SizedBox(
                         height: 20,
                       ),
@@ -84,8 +88,12 @@ class LoginPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(50)),
                             child: Text(
                               "Login",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.w600, fontSize: 18),
+                              style: GoogleFonts.openSans(
+                                textStyle: TextStyle(
+                                    color: Color(0xFF20124d),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 18),
+                              ),
                             ),
                           ),
                         ),

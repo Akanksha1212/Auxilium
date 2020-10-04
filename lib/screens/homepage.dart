@@ -15,42 +15,49 @@ class HomeState extends State<Home> {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 10,
-          ),
-          Image(
-            image: AssetImage('assets/images/earth.png'),
+            height: 25,
           ),
           Padding(
             padding: EdgeInsets.only(left: 16, right: 16),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "Home",
-                      style: GoogleFonts.openSans(
-                          textStyle: TextStyle(
-                              color: Color(0xFF20124d),
-                              fontSize: 23,
-                              fontWeight: FontWeight.bold)),
-                    ),
-                  ],
+                  children: <Widget>[],
+                ),
+                IconButton(
+                  alignment: Alignment.topCenter,
+                  icon: Image.asset(
+                    "assets/images/user.png",
+                    width: 30,
+                  ),
+                  onPressed: () {},
                 ),
                 IconButton(
                   alignment: Alignment.topCenter,
                   icon: Image.asset(
                     "assets/images/notification.png",
-                    width: 24,
+                    width: 30,
                   ),
                   onPressed: () {},
                 )
               ],
             ),
           ),
+          Text(
+            "Auxilium",
+            style: GoogleFonts.openSans(
+                textStyle: TextStyle(
+                    color: Color(0xFF20124d),
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold)),
+          ),
+          Image(
+            image: AssetImage('assets/images/earth.png'),
+          ),
           SizedBox(
-            height: 40,
+            height: 5,
           ),
           GridDashboard()
         ],

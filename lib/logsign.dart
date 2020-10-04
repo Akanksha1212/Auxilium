@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:auxilium/animation/fadeanimation.dart';
 import 'package:auxilium/screens/login.dart';
 import 'package:auxilium/screens/signup.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignIn extends StatelessWidget {
   @override
@@ -67,8 +68,12 @@ class SignIn extends StatelessWidget {
                             borderRadius: BorderRadius.circular(50)),
                         child: Text(
                           "Login",
-                          style: TextStyle(
-                              fontWeight: FontWeight.w600, fontSize: 18),
+                          style: GoogleFonts.openSans(
+                            textStyle: TextStyle(
+                                color: Color(0xFF20124d),
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
                         ),
                       )),
                   SizedBox(
@@ -101,8 +106,12 @@ class SignIn extends StatelessWidget {
                               borderRadius: BorderRadius.circular(50)),
                           child: Text(
                             "Sign up",
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600, fontSize: 18),
+                            style: GoogleFonts.openSans(
+                              textStyle: TextStyle(
+                                  color: Color(0xFF20124d),
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 18),
+                            ),
                           ),
                         ),
                       ))

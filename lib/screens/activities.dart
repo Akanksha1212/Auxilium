@@ -58,10 +58,47 @@ class ActivitiesState extends State<Activities> {
                           borderRadius: BorderRadius.circular(18),
                           side: BorderSide(color: Colors.black)),
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ActDetail()));
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20.0)),
+                                child: Container(
+                                  height: 200,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        TextField(
+                                          decoration: InputDecoration(
+                                              border: InputBorder.none,
+                                              hintMaxLines: 3,
+                                              hintText:
+                                                  'Your mission, should you choose to accept it'),
+                                        ),
+                                        SizedBox(
+                                          width: 320.0,
+                                          child: RaisedButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "Yess! I accept this mission",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            color: const Color(0xFF1BC0C5),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              );
+                            });
                       },
                     ),
                   ),
@@ -86,10 +123,47 @@ class ActivitiesState extends State<Activities> {
                           borderRadius: BorderRadius.circular(18),
                           side: BorderSide(color: Colors.black)),
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ActDetail()));
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20.0)),
+                                child: Container(
+                                  height: 200,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        TextField(
+                                          decoration: InputDecoration(
+                                              border: InputBorder.none,
+                                              hintMaxLines: 3,
+                                              hintText:
+                                                  'Your mission, should you choose to accept it'),
+                                        ),
+                                        SizedBox(
+                                          width: 320.0,
+                                          child: RaisedButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "Yess! I accept this mission",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            color: const Color(0xFF1BC0C5),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              );
+                            });
                       },
                     ),
                   ),
@@ -113,10 +187,47 @@ class ActivitiesState extends State<Activities> {
                           borderRadius: BorderRadius.circular(18),
                           side: BorderSide(color: Colors.black)),
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ActDetail()));
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20.0)),
+                                child: Container(
+                                  height: 200,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        TextField(
+                                          decoration: InputDecoration(
+                                              border: InputBorder.none,
+                                              hintMaxLines: 3,
+                                              hintText:
+                                                  'Your mission, should you choose to accept it'),
+                                        ),
+                                        SizedBox(
+                                          width: 320.0,
+                                          child: RaisedButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "Yess! I accept this mission",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            color: const Color(0xFF1BC0C5),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              );
+                            });
                       },
                     ),
                   ),
@@ -140,10 +251,47 @@ class ActivitiesState extends State<Activities> {
                           borderRadius: BorderRadius.circular(18),
                           side: BorderSide(color: Colors.black)),
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => ActDetail()));
+                        showDialog(
+                            context: context,
+                            builder: (BuildContext context) {
+                              return Dialog(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20.0)),
+                                child: Container(
+                                  height: 200,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(12.0),
+                                    child: Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        TextField(
+                                          decoration: InputDecoration(
+                                              border: InputBorder.none,
+                                              hintMaxLines: 3,
+                                              hintText:
+                                                  'Your mission, should you choose to accept it'),
+                                        ),
+                                        SizedBox(
+                                          width: 320.0,
+                                          child: RaisedButton(
+                                            onPressed: () {},
+                                            child: Text(
+                                              "Yess! I accept this mission",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            color: const Color(0xFF1BC0C5),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              );
+                            });
                       },
                     ),
                   ),

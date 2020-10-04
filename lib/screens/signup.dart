@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auxilium/animation/fadeanimation.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignupPage extends StatelessWidget {
   @override
@@ -33,12 +34,15 @@ class SignupPage extends StatelessWidget {
               Column(
                 children: <Widget>[
                   FadeAnimation(
-                      1,
-                      Text(
-                        "Sign up",
-                        style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.bold),
-                      )),
+                    1,
+                    Text("Sign up",
+                        style: GoogleFonts.openSans(
+                          textStyle: TextStyle(
+                              color: Color(0xFF20124d),
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
+                        )),
+                  ),
                   SizedBox(
                     height: 10,
                   ),
@@ -81,8 +85,12 @@ class SignupPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(50)),
                       child: Text(
                         "Sign up",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 18),
+                        style: GoogleFonts.openSans(
+                          textStyle: TextStyle(
+                              color: Color(0xFF20124d),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18),
+                        ),
                       ),
                     ),
                   )),
@@ -93,9 +101,13 @@ class SignupPage extends StatelessWidget {
                     children: <Widget>[
                       Text("Already have an account?"),
                       Text(
-                        " Login",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 18),
+                        "Login",
+                        style: GoogleFonts.openSans(
+                          textStyle: TextStyle(
+                              color: Color(0xFF20124d),
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18),
+                        ),
                       ),
                     ],
                   )),
